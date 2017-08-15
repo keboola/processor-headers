@@ -16,4 +16,4 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 COPY . /code/
 WORKDIR /code/
 RUN composer install --no-interaction
-CMD ["/code/main.php"]
+CMD ["php", "/code/main.php"]

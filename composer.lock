@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "b3e0db4c8e8c8a3ae8522bf41c3460a4",
+    "content-hash": "dd67a016e5d4232a8e2e7ddcfb860821",
     "packages": [
         {
             "name": "keboola/csv",
@@ -44,6 +44,8 @@
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": "^7.1"
+    },
     "platform-dev": []
 }

@@ -1,8 +1,9 @@
 version: '2'
 services:
-  data-loader:
+  processor-headers:
     build: .
     image: keboola/processor-headers
     tty: true
     stdin_open: true
-    command: bash
+    volumes:
+      - ./tests/:/test-data/
