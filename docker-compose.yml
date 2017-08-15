@@ -1,0 +1,8 @@
+version: '2'
+services:
+  data-loader:
+    build: .
+    image: keboola/processor-headers
+    tty: true
+    stdin_open: true
+    command: bash
