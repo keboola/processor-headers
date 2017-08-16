@@ -9,8 +9,7 @@ $escapedBy = getenv('KBC_PARAMETER_ESCAPED_BY') === false ? '' : getenv('KBC_PAR
 $files = new FilesystemIterator($dataDir . 'in/tables/', FilesystemIterator::SKIP_DOTS);
 $destination = $dataDir . 'out/tables/';
 /** @var FilesystemIterator $file */
-foreach ($files as $file)
-{
+foreach ($files as $file) {
     if ($file->getExtension() == 'manifest') {
         copy($file->getPathname(), $destination . $file->getFilename());
     } else {
@@ -30,7 +29,7 @@ foreach ($files as $file)
         foreach ($sourceCsv as $index => $row) {
             if ($index > 0) {
                 // skip header
-                $destinationCsv->writeRow($row);
+                $destinationCsv->writeRow(array_pad($row, $maxColCount, ''));
             }
         }
     }
