@@ -22,13 +22,36 @@ Then load some CSV files into `./data/in/tables`, create empty folder `./data/ou
    - publish image to ECR if release is tagged
    
 # Usage
+The processor makes a CSV file orthogonal. It fills missing column names with auto-generated names (`auto_col_XX`) 
+and missing values in rows with empty string. The processor is registered with id `keboola-processor.headers`. 
+It supports optional pareters:
 
-## Sample configuration
+- `delimiter` --- CSV delimiter, defaults to `,`
+- `enclosure` --- CSV enclosure, defaults to `"`
+- `escaped_by` --- escape character for the enclosure, defaults to empty
+
+## Sample configurations
+
+Default parameters:
 
 ```
 {  
     "definition": {
-        "component": "keboola.processor.headers"
+        "component": "keboola-processor.headers"
     }
+}
+```
+
+Use tab as delimiter and single quote as enclosure:
+
+```
+{
+    "definition": {
+        "component": "keboola-processor.headers"
+    },
+    "parameters": {
+    	"delimiter": "\t",
+    	"enclosure": "'"
+	}
 }
 ```
