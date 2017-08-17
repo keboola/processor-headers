@@ -26,9 +26,9 @@ The processor makes a CSV file orthogonal. It fills missing column names with au
 and missing values in rows with empty string. The processor is registered with id `keboola-processor.headers`. 
 It supports optional pareters:
 
-- `delimiter` --- CSV delimiter, defaults to `,`
-- `enclosure` --- CSV enclosure, defaults to `"`
-- `escaped_by` --- escape character for the enclosure, defaults to empty
+- `delimiter` -- CSV delimiter, defaults to `,`
+- `enclosure` -- CSV enclosure, defaults to `"`
+- `escaped_by` -- escape character for the enclosure, defaults to empty
 
 ## Sample configurations
 
