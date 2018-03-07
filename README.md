@@ -23,7 +23,7 @@ Then load some CSV files into `./data/in/tables`, create empty folder `./data/ou
    
 # Usage
 The processor makes a CSV file orthogonal. It fills missing column names with auto-generated names (`auto_col_XX`) 
-and missing values in rows with empty string. The processor is registered with id `keboola-processor.headers`. 
+and missing values in rows with empty string. The processor is registered with id `keboola.processor-headers`. 
 It supports optional pareters:
 
 - `delimiter` -- CSV delimiter, defaults to `,`
