@@ -37,7 +37,7 @@ Default parameters:
 ```
 {  
     "definition": {
-        "component": "keboola-processor.headers"
+        "component": "keboola.processor-headers"
     }
 }
 ```
