@@ -47,7 +47,7 @@ Use tab as delimiter and single quote as enclosure:
 ```
 {
     "definition": {
-        "component": "keboola-processor.headers"
+        "component": "keboola.processor-headers"
     },
     "parameters": {
     	"delimiter": "\t",
