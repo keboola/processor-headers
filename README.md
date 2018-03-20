@@ -1,5 +1,7 @@
 # processor-headers
 
+**Depreacted - replaced by [processor-orthogonal](https://github.com/keboola/processor-orthogonal)**
+
 [![Build Status](https://travis-ci.org/keboola/processor-headers.svg?branch=master)](https://travis-ci.org/keboola/processor-headers)
 
 Headers processor. Takes all CSV files in `/data/in/tables` (except `.manifest` files), autogenerates missing headers and stores the files to `/data/out/tables`. Ignores directory structure and deletes all non-csv files.
