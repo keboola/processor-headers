@@ -57,3 +57,7 @@ Use tab as delimiter and single quote as enclosure:
 	}
 }
 ```
+
+## License
+
+MIT licensed, see [LICENSE](./LICENSE) file.
